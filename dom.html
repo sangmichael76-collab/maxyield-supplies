@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxYield Supplies - Moisbridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">MaxYield Supplies</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+                <li><a href="#team" onclick="toggleMenu()">Team</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>MaxYield Supplies</h1>
+            <p>Your trusted agricultural partner in Moisbridge — empowering farmers for maximum harvests.</p>
+            <button onclick="scrollToSection('products')">Explore Products</button>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            MaxYield Supplies is a leading agricultural inputs supplier based in Moisbridge, Kenya.  
+            With over 5 years of serving farmers, we aim to provide affordable, high-quality farm 
+            products including fertilizers, seeds, herbicides, pesticides, and farm equipment.  
+            Our mission is to support every farmer in achieving **maximum yields** through reliable 
+            and sustainable agricultural solutions.
+        </p>
+        <br>
+        <p>
+            We work closely with certified manufacturers to ensure all our products meet the highest 
+            agricultural standards. Our dedicated team is always ready to provide agronomic support, 
+            expert advice, and field-based guidance to help farmers improve productivity.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section alt-bg">
+        <h2>Our Services</h2>
+
+        <div class="grid-3">
+            <div class="card">
+                <h3>Agronomic Consultation</h3>
+                <p>Expert advice on soil health, crop selection, and pest management.</p>
+            </div>
+
+            <div class="card">
+                <h3>Soil Testing</h3>
+                <p>Accurate soil analysis to determine the best fertilizer application.</p>
+            </div>
+
+            <div class="card">
+                <h3>Farm Support & Training</h3>
+                <p>Workshops and on-farm training to improve farming practices and yields.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+
+        <div class="grid-4">
+            <div class="product-card">
+                <h3>Fertilizers</h3>
+                <p>High-performance fertilizers for optimum crop growth and soil health.</p>
+            </div>
+
+            <div class="product-card">
+                <h3>Certified Seeds</h3>
+                <p>Drought-resistant, high-yield seed varieties suited for local climates.</p>
+            </div>
+
+            <div class="product-card">
+                <h3>Agrochemicals</h3>
+                <p>Herbicides, pesticides, and fungicides for effective crop protection.</p>
+            </div>
+
+            <div class="product-card">
+                <h3>Farm Tools</h3>
+                <p>Durable tools and equipment for all types of farming activities.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p><strong>Location:</strong> Moisbridge, Kenya</p>
+        <p><strong>Phone:</strong> 0113006574</p>
+        <p><strong>Email:</strong> maxyield@supplies.co.ke</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="formStatus"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MaxYield Supplies – Moisbridge. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
